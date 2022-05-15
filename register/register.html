@@ -8,15 +8,29 @@
     </head>
     <body>
         <h1>REGISTRSTION</h1>
+        
+        <p>NAME</p>
+        <!-- <span style="font-size: 2cm;">Content</span><br> -->
+        <input type="text" id="name" /><br>
+
         <p>LOCATION</p>
         <!-- <span style="font-size: 2.5cm;">Title</span><br> -->
         <input type="text" id="location" /><br>
-        <p>NAME</p>
-        <!-- <span style="font-size: 2cm;">Content</span><br> -->
-        <textarea id="name" rows="3"></textarea>
+
+        <p>營業時間</p>
+        <!-- <textarea id = "detail" rows = "3"></textarea> -->
+        
+        <input type="datetime-local" id="meeting-time"name="meeting-time" value="2018-06-12T19:30" min="2018-06-07T00:00" max="2018-06-14T00:00">
+        <p>-</p>
+        <input type="datetime-local" id="meeting-time"name="meeting-time" value="2018-06-12T19:30" min="2018-06-07T00:00" max="2018-06-14T00:00">
+
         <p>CONTENT</p>
-        <textarea id = "detail" rows = "3"></textarea>
-        <br>
+        <input type = "text", id = "menu">
+        <input type = "text", id = "price">
+        <div id = "list"></div>
+        
+        <br><br>
+
         <button id="btn">click to summit</button>
 
         <div id="list">
@@ -27,6 +41,6 @@
         </div>
 
 
-        <script src="blog_script.js"></script>
+        <script src="register_script.js"></script>
     </body>
 </html>
